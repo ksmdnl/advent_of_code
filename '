@@ -1,0 +1,15 @@
+def scan(seq, idx):
+  end_num = False
+  str_num = ""
+  while(end_num == False):
+    cur_char = seq[idx]
+    if cur_char.isdigit():
+      str_num += cur_char
+      idx += 1
+    else:
+      end_num = True
+  return idx, len(str_num), int(str_num)
+
+def main():
+  sum = 0
+    
